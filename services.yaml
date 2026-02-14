@@ -1,0 +1,23 @@
+﻿sendmessage:
+  name: 发送消息
+  description: 通过 ServerChan 发送消息通知
+  fields:
+    title:
+      name: 标题
+      description: 消息标题
+      required: true
+      selector:
+        text: {}
+    message:
+      name: 消息内容
+      description: 消息详细内容
+      required: false
+      selector:
+        text:
+          multiline: true
+    options:
+      name: 选项
+      description: 附加选项（如标签等）
+      required: false
+      selector:
+        object: {}
